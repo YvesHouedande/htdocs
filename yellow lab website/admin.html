@@ -1,0 +1,238 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Y'ELLO LAB Admin</title>
+      
+        <!--   
+          - favicon
+        -->
+        <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+      
+        <!--
+          - custom css link
+        -->
+        <link rel="stylesheet" href="./assets/css/style-prefix.css">
+        <link rel="stylesheet" href="./assets/css/styleAdmin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
+
+      
+        <!--
+          - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+      
+      </head>
+      
+<body>
+
+
+    <header>
+        <div class="header-main">
+
+            <div class="container">
+      
+              <a href="#" class="header-logo">
+                <img src="./assets/images/logo/logo.svg" alt="YELLO's logo" width="150" height="36">
+              </a>
+      
+              <div class="header-search-container">
+      
+                <input type="search" name="search" class="search-field" placeholder="search your content...">
+      
+                <button class="search-btn">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+      
+              </div>
+ 
+              
+    
+      
+            </div>
+      
+          </div>
+
+          <nav class="desktop-navigation-menu">
+  
+            <div class="container">
+                <div class="">
+              <ul class="desktop-menu-category-list">
+                
+                <li class="menu-category">
+                  <a href="#" ><img class ="header-img" src="assets/images/icons/person-outline.svg" alt="personne"></a>
+                </li>
+                      
+                <li class="menu-category">
+                    <a href="#" id="openModalBtn" ><img class="header-img"  src="assets/images/icons/add-circle-outline.svg" alt="composant"></a>
+                </li>
+                        
+                <li class="menu-category">
+                    <a href="#" ><img class="header-img"  src="assets/images/icons/bag-check-outline.svg" alt="facture"></a>
+                    <span class="badge">3</span>
+                  </li>
+                </div>
+                
+            </nav>
+    </header>
+
+    <main>
+            <div class="container">
+                <div class="product-box">
+                    <div class="product-minimal">
+
+                        <div class="product-showcase">
+
+                            <h2 class="title"></h2>
+                            
+
+
+                            </div>
+
+                            <div class="showcase-container">
+                            
+
+                            
+                                <div class="showcase">
+                            
+                                <a  class="showcase-img-box">
+                                    <img src="./assets/images/products/jacket-1.jpg" alt="composant1" class="showcase-img"
+                                    width="70">
+                                </a>
+                            
+                                <div class="showcase-content">
+                            
+                                    <a >
+                                    <h4 class="showcase-title">Composant</h4>
+                                    </a>
+                            
+                                    <a  class="showcase-category">description</a>
+                            
+                                    <div class="prices-box">
+                                    <p style="font-size: 12px;">categorie</p>
+                                    <span style="font-size: 16;">Qte :</span>
+                                    <span style="font-size: medium;">18</span>
+                                    </div>
+                            
+                                </div>
+                                
+                            
+                                <button>remove</button>
+                                <button >modify</button>
+
+                                </div>
+
+                                <div class="showcase">
+                            
+                                    <a  class="showcase-img-box">
+                                        <img src="./assets/images/products/jacket-1.jpg" alt="composant1" class="showcase-img"
+                                        width="70">
+                                    </a>
+                                
+                                    <div class="showcase-content">
+                                
+                                        <a >
+                                        <h4 class="showcase-title">Composant</h4>
+                                        </a>
+                                
+                                        <a  class="showcase-category">description</a>
+                                
+                                        <div class="prices-box">
+                                        <p style="font-size: 12px;">categorie</p>
+                                        <span style="font-size: 16;">Qte :</span>
+                                        <span style="font-size: medium;">18</span>
+                                        </div>
+                                
+                                    </div>
+                                    
+                                
+                                    <button>remove</button>
+                                    <button>modify</button>
+    
+                                </div>
+
+                                <div class="showcase">
+                            
+                                    <a  class="showcase-img-box">
+                                        <img src="./assets/images/products/jacket-1.jpg" alt="composant1" class="showcase-img"
+                                        width="70">
+                                    </a>
+                                
+                                    <div class="showcase-content">
+                                
+                                        <a >
+                                        <h4 class="showcase-title">Composant</h4>
+                                        </a>
+                                
+                                        <a  class="showcase-category">description</a>
+                                
+                                        <div class="prices-box">
+                                        <p style="font-size: 12px;">categorie</p>
+                                        <span style="font-size: 16;">Qte :</span>
+                                        <span style="font-size: medium;">18</span>
+                                        </div>
+                                
+                                    </div>
+                                    
+                                
+                                    <button>remove</button>
+                                    <button>modify</button>
+    
+                                </div>
+                            
+
+                            
+                            </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+              <!-- Fenêtre contextuelle (modale) pour ajouter composant -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                
+            <span class="close" id="closeModalBtn">&times;</span>
+            
+            <form id="newsletterForm">
+                <h2>Ajouter un Produit</h2>
+                <label for="nom">Réf:</label>
+                <input type="text" id="nom" required>
+                <label for="prenom">Description:</label>
+                <input type="text" id="prenom" required>
+                <label for="email">Catégorie :</label>
+                <input type="email" id="email" required>
+                <label for="age">Qte :</label>
+                <input type="number" id="age" required>
+                <input type="submit" value="Ajouter">
+            </form>
+            </div>
+        </div>
+
+    
+        <!-- Fenêtre contextuelle (modale)pour article -->
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            
+        <span class="close" id="closeModalBtn">&times;</span>
+        
+        <form id="newsletterForm">
+            
+        </form>
+        </div>
+    </div>
+    </main>
+    <script src="./assets/js/scriptAdmin.js"></script>
+</body>
+</html>
